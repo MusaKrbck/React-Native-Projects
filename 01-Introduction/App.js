@@ -7,7 +7,7 @@ export default function App() {
       <View style={styles.container}>
         <Text style={styles.musastil}>TAM ORTA</Text>
         <Button title='BUTONA BAS' color={'black'} ></Button>
-        <Text>Değişiklik</Text>
+        <Text>Change</Text>
       </View>
     </View>
   );
