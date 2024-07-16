@@ -1,11 +1,10 @@
 {
   "expo": {
-    "name": "Note_Taking_App",
-    "slug": "Note_Taking_App",
+    "name": "MiniGameApp",
+    "slug": "MiniGameApp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/Assassins_creed_logo.png",
-    "backgroundColor":"f5f5f5" ,
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -17,12 +16,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/Assassins_creed_logo.png",
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./assets/Assassins_creed_logo.png"
+      "favicon": "./assets/favicon.png"
     }
   }
 }
