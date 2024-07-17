@@ -1,9 +1,24 @@
-import { Text, View, StyleSheet } from "react-native";
+import { useState } from "react";
+import { Text, View, StyleSheet, } from "react-native";
+
+import Title from "../components/title";
+
+function generateRandomBetween(min, max, exclude) {
+    const rndNum = Math.floor(Math.random() * (max - min)) + min;
+  
+    if (rndNum === exclude) {
+      return generateRandomBetween(min, max, exclude);
+    } else {
+      return rndNum;
+    }
+  };
 
 function GameScreen() {
+    const [currentGuess, setCurrentGuess] = useState();
+    
     return (
     <View style={styles.screen}>
-        <Text>
+        <Text style={styles.title} >
             Opponent's Guess
         </Text>
             {/* {GUESS} */}
@@ -16,16 +31,16 @@ function GameScreen() {
         {/* <View>LOG ROUNDS</View> */}
     </View>
     );
-}
+};
 
 export default GameScreen;
 
 const styles = StyleSheet.create({
     screen: {
         flex: 1,
-        padding: 12,
-        justifyContent: 'center',
-        alignItems: 'center'
+        padding: 30,
+        // justifyContent: 'center',
+        // alignItems: 'center'
     },
 });
 
