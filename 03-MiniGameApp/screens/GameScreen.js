@@ -9,7 +9,7 @@ function generateRandomBetween(min, max, exclude) {
     if (rndNum === exclude) {
       return generateRandomBetween(min, max, exclude);
     } else {
-      return rndNum;
+      return rndNum;S
     }
   };
 
