@@ -4,7 +4,7 @@
     "slug": "04-MealsApp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "backgroundColor" : "#24180f",
+    "backgroundColor": "#24180f",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
@@ -19,10 +19,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "Meals.App"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9b630e5b-7bd2-4051-ac26-0c9d2f8add37"
+      }
     }
   }
 }
