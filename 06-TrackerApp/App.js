@@ -37,8 +37,8 @@ function ExpenseOverview() {
         name='RecentExpenses' 
         component={RecentExpenses}
         options={{
-          title : 'Recent Expenses',
-          tabBarLabel : 'Recent',
+          title : 'Son Harcamalar',
+          tabBarLabel : ' Son Harcama',
           tabBarIcon : ({color, size}) => 
           <Ionicons name='hourglass' size={size} color={color} />
         }} 
@@ -47,8 +47,8 @@ function ExpenseOverview() {
         name='AllExpenses' 
         component={AllExpenses} 
         options={{
-          title : 'All Expenses',
-          tabBarLabel : 'All Expenses',
+          title : 'Tüm Harcamalar',
+          tabBarLabel : 'Tümü',
           tabBarIcon : ({color, size}) => 
           <Ionicons name='calendar' size={size} color={color} />
         }}

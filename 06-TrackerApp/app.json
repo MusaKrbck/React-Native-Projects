@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "06-TrackerApp",
+    "name": "TrackerApp",
     "slug": "06-TrackerApp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/expense.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -18,10 +18,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.TrackerApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8235712a-81f4-4ef3-b84d-f95d97c36d0f"
+      }
     }
   }
 }

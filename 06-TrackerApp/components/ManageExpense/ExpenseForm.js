@@ -61,11 +61,11 @@ function ExpenseForm({ submitButtonLabel, onCancel, onSubmit, defaultValues }) {
 
     return (
         <View style={styles.form}>
-            <Text style={styles.title}>Your Expense</Text>
+            <Text style={styles.title}>Para Var Huzur Var..</Text>
             <View style={styles.inputRow}>
                 <Input
                     style={styles.rowInput}
-                    label="Amount"
+                    label="Miktar"
                     inValid={!inputs.amount.isValid}
                     textInputConfig={{
                         keyboardType: 'decimal-pad',
@@ -73,7 +73,7 @@ function ExpenseForm({ submitButtonLabel, onCancel, onSubmit, defaultValues }) {
                         value: inputs.amount.value,
                     }} />
                 <Input 
-                    label="Date"
+                    label="Tarih"
                     style={styles.rowInput}
                     inValid={!inputs.date.isValid}
                     textInputConfig={{
@@ -84,7 +84,7 @@ function ExpenseForm({ submitButtonLabel, onCancel, onSubmit, defaultValues }) {
                     }} />
             </View>
             <Input 
-                label="Description"
+                label="Açıklama"
                 inValid={!inputs.description.isValid}
                 textInputConfig={{
                     multiline: true,
@@ -96,7 +96,7 @@ function ExpenseForm({ submitButtonLabel, onCancel, onSubmit, defaultValues }) {
             )}
             <View style={styles.buttons}>
                 <Button style={styles.button} mode="flat" onPress={onCancel}>
-                    Cancel
+                    Vazgeç
                 </Button>
                 <Button style={styles.button} onPress={submitHandler}>
                     {submitButtonLabel}
